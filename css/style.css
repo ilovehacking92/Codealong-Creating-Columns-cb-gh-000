@@ -70,3 +70,76 @@ figcaption {
 #details a:active {
   color: red;
 }
+
+/* ///// MEDIA ///// */
+ video , img , audio {
+  max-width: 100%;
+ }
+
+/* ///// SOCIAL ///// */
+#social a {
+  display: block;
+  width: 80px;
+  margin-bottom: 10px;
+  background: #ad2;
+}
+#social {
+  position: fixed;
+  top: 300px;
+  right: 50px;
+  z-index: 1;
+}
+
+
+/* ///// LAYOUT ///// */
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 960px;
+  background: #eee;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+[class*="col-"] {
+  background: #ddd;
+  margin-left: 2%;
+  padding: 2%;
+}
+.col-1 {
+  width: 32%;
+  float: left;
+}
+
+.col-2 {
+  width: 64%;
+  float: left;
+}
+.col-3 {
+  width: 100%;
+}
+
+.first {
+  margin-left: 0;
+}
+
+/* ///// HEADER ///// */
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #fff;
+  z-index: 2;
+
+}
